@@ -1,0 +1,123 @@
+h1, h2, h3{
+	padding-top:20px;
+}
+h1 {
+  font-size: 100px;
+  font-family: futura;
+	margin:400px;
+	padding-top:50px;
+}
+p{
+  font-size: 30px;
+  font-family: futura;
+  margin-left: 150px;
+  margin-right: 150px;
+	margin-bottom: 70px;
+	padding-top:20px;
+}
+h2{
+  font-size: 50px;
+	margin-top:20px;
+	padding-top:20px;
+}
+h3{
+  font-size: 50px;
+	margin-top:20px;
+	padding-top:15px;
+}
+
+.white-text{
+  color: white;
+}
+.red-text{
+  color: rgb(150,20,30);
+}
+#section1{
+  background-image: url("https://i.pinimg.com/originals/e0/d0/67/e0d067202106b85c5d1fc7a67683704f.jpg");
+  background-position: center center;
+	background-size: cover;
+	height:400px;
+}
+
+#section2{
+  background-image:url(https://i.pinimg.com/736x/aa/27/71/aa2771bfad9822a000fe1b1e955e74af--purple-and-blue-purple-rain.jpg);
+  background-position: center center;
+	background-size: cover;
+	height:300px;
+}
+ul{
+	list-style:none;
+}
+.btn-freeCodeCamp {
+	  background: #0E76A8;
+	  border-radius: 0;
+	  color: #fff;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #084461;
+    margin-top:40px;
+    margin-bottom: 60px;
+	}
+	.btn-freeCodeCamp:link, .btn-freeCodingCamp:visited {
+	  color: #fff;
+	}
+	.btn-freeCodeCamp:active, .btn-freeCodingCamp:hover {
+	  background: #084461;
+	  color: #fff;
+	}
+.btn-twitter {
+	  background: #00ACEE;
+	  border-radius: 0;
+	  color: #fff;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #0075a2;
+    margin-top: 40px;
+    margin-bottom: 60px;
+	}
+	.btn-twitter:link, .btn-twitter:visited {
+	  color: #fff; 
+	}
+	.btn-twitter:active, .btn-twitter:hover {
+	  background: #0075a2;
+	  color: #fff; 
+	}
+.btn-github {
+	  background: #00ACEE;
+	  border-radius: 0;
+	  color: #fff;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #0075a2;
+    margin-top: 40px;
+    margin-bottom: 60px;
+	}
+	.btn-github:link, .btn-github:visited {
+	  color: #fff; 
+	}
+	.btn-github:active, .btn-github:hover {
+	  background: #0075a2;
+	  color: #fff; 
+	}
+.btn-facebook {
+	  background: #0E76A8;
+	  border-radius: 0;
+	  color: #fff;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #084461;
+    margin-top: 40px;
+    margin-bottom: 60px;
+	}
+	.btn-facebook:link, .btn-facebook:visited {
+	  color: #fff;
+	}
+	.btn-facebook:active, .btn-facebook:hover {
+	  background: #084461;
+	  color: #fff;
+	}
+#section3{
+  background-image:url(https://static.pexels.com/photos/69927/rain-floor-water-wet-69927.jpeg);
+  background-position: center center;
+	background-size: cover;
+  }
