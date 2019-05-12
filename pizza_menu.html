@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/pizza_menu.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Pizza Menu</title>
+  </head>
+
+  <body>   
+        <div class="jumbotron jumbotron-fluid bg-success">
+            <div class="container-title">
+                <h1 class="font-weight-bold text-center text-dark">Reihl's Pizza Menu</h1>
+            </div>
+        </div>
+
+        <div class="text-center" id="menuBG">
+            <form action="/action_page.php" id="options" >
+            
+                <!--Size options-->
+
+                <div class="card-group">
+                    <div class="card border-success mb-3">
+                        <div class="card-body">
+                            <h2>Pizza Size</h2> 
+                                <input class="size" type="radio" name="pizza" value="Personal Pizza"> Personal ($6.00)<br>
+                                <input class="size" type="radio" name="pizza" value="Medium Pizza" checked> Medium ($10.00)<br>
+                                <input class="size" type="radio" name="pizza" value="Large Pizza"> Large ($14.00)<br>
+                                <input class="size" type="radio" name="pizza" value="X-Large Pizza"> X-Large ($16.00)<br><br>      
+                        </div>
+                    </div>
+                    
+                <!--Crust options-->
+                    
+                    <div class="card border-success mb-3">
+                        <div class="card-body">
+                            <h2>Crust</h2>
+                                    
+                                <input class="crust" type="radio" name="crust" value="Regular" checked> Regular<br>
+                                <input class="crust" type="radio" name="crust" value="Garlic Butter"> Garlic Butter<br>
+                                <input class="crust" type="radio" name="crust" value="Cheese Stuffed"> Cheese Stuffed<br>
+                                <input class="crust" type="radio" name="crust" value="Spicy"> Spicy<br>
+                                <input class="crust" type="radio" name="crust" value="Special"> House Special (GF)<br><br>  
+                    
+                            <h6>+$3.00 for Cheese Stuffed Crust. All other are free.<h6>
+                        </div>
+                    </div>
+                    
+                <!--Sauce options-->
+                    
+                    <div class="card border-success mb-3">
+                        <div class="card-body">
+                            <h2>Sauce</h2>        
+                                <input class="sauce" type="radio" name="sauce" value="Marinara" checked> Marinara<br>
+                                <input class="sauce" type="radio" name="sauce" value="White"> White<br>
+                                <input class="sauce" type="radio" name="sauce" value="B.B.Q"> B.B.Q.<br>
+                                <input class="sauce" type="radio" name="sauce" value="No sauce"> No Sauce<br><br>  
+                        </div>
+                    </div>
+                </div>   
+        
+        
+                <!--Cheese options-->
+
+                <div class="card-group">
+                    <div class="card border-success mb-3">
+                        <div class="card-body">
+                            <h2>Cheese</h2>
+                                <input class="cheese" type="radio" name="cheese" value="Cheese" checked> Regular<br>
+                                <input class="cheese" type="radio" name="cheese" value="Extra Cheese"> Extra Cheese<br>
+                                <input class="cheese" type="radio" name="cheese" value="No cheese"> No Cheese<br><br>  
+                            <h6>+$3.00 for  extra \ any size pizza</h6>
+                        </div>
+                    </div>
+                
+                <!--Meat options-->
+                    
+                    <div class="card border-success mb-3">
+                        <div class="card-body">
+                            <h2>Choose a Meat:</h2>
+                                <input class="meats" type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
+                                <input class="meats" type="checkbox" name="meat" value="Sausage"> Sausage<br>
+                                <input class="meats" type="checkbox" name="meat" value="Canadian bacon"> Canadian Bacon<br>
+                                <input class="meats" type="checkbox" name="meat" value="Ground Beef"> Ground Beef<br>
+                                <input class="meats" type="checkbox" name="meat" value="Chicken"> Chicken<br>
+                                <input class="meats" type="checkbox" name="meat" value="Anchovy"> Anchovy<br><br>
+                            <h6>+$1.00 each additional \ first complimentary meat item</h6>
+                        </div>
+                    </div>
+
+                <!--Veggie options-->
+                    
+                    <div class="card border-success mb-3">
+                        <div class="card-body">
+                            <h2>Choose a Veggie:</h2>
+                                    
+                            <input class="veggie" type="checkbox" name="veggie" value="Onion"> Onion<br>
+                            <input class="veggie" type="checkbox" name="veggie" value="Peppers"> Green Peppers<br>
+                            <input class="veggie" type="checkbox" name="veggie" value="Olives"> Black Olives<br>
+                            <input class="veggie" type="checkbox" name="veggie" value="Mushroom"> Mushrooms<br>
+                            <input class="veggie" type="checkbox" name="veggie" value="Spinach"> Spinach<br>
+                            <input class="veggie" type="checkbox" name="veggie" value="Pineapple"> Pineapple<br>
+                            <input class="veggie" type="checkbox" name="veggie" value="Jalapeno"> Jalapenos<br><br>
+                    
+                        
+                        <h6>+$1.00 each additional \ first complimentary veggie item</h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="cart">
+					<div id="showText"></div>
+					<div id="totalPrice"></div>
+				</div>
+            </form>
+            
+            <input class="btn btn-info btn-lg" id="btnOrder" type="button" onclick="getReceipt()" 
+                value="Place Order">
+            <input class="btn btn-info btn-lg"id="reset" type="button" onclick="clearAll()" 
+                value="Cancel">
+        </div>
+       
+    <!--For receipt JS-->
+    <script src="./js/pizza_menu.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
