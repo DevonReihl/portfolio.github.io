@@ -8,12 +8,14 @@ body {
 h1, h2, h3{
 	padding-top:20px;
 }
+
 h1 {
   font-size: 100px;
   font-family: futura;
 	margin:400px;
 	padding-top:50px;
 }
+
 p{
   font-size: 30px;
   font-family: futura;
@@ -22,11 +24,13 @@ p{
 	margin-bottom: 70px;
 	padding-top:20px;
 }
+
 h2{
   font-size: 50px;
 	margin-top:20px;
 	padding-top:20px;
 }
+
 h3{
   font-size: 50px;
 	margin-top:20px;
@@ -64,8 +68,6 @@ ul{
 	padding: 10px;
 	border-radius: 8px;
 	margin: 0px auto;
-	/*background-color: rgba(100,65,0,.3);
-	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);*/
 }
 
 
